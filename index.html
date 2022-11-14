@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HALA.CHAT</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Stylesheets -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/e8880ca740.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <section id="header">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href=""
+            ><img src="images/WebLogo.png" width="50" alt="" />&nbsp;<span
+              id="hala"
+              >HALA</span
+            >.CHAT</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Chats</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Rules</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ.</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary btn-facebook">
+            <i class="fa-brands fa-facebook"></i> Share
+          </button>
+          <button type="button" class="btn btn-primary btn-facebook">
+            <i class="fa-solid fa-thumbs-up"></i> Like
+          </button>
+          <button type="button" class="btn btn-primary btn-twitter">
+            <i class="fa-brands fa-twitter"></i> Tweet
+          </button>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button
+          class="lang-btn btn btn-outline-dark dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-globe"></i> Select Language
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">English</a></li>
+          <li><a class="dropdown-item" href="#">Arabic</a></li>
+        </ul>
+      </div>
+
+      <div class="animation-logo container">
+        <div class="logo-info">
+          <img class="logo" src="images/WebLogo.png" alt="" />
+          <span id="hala">HALACHAT</span>
+        </div>
+
+        <div
+          class="logo-content d-flex align-items-center justify-content-center"
+        >
+          <app-blobby>
+            <div
+              class="box offline"
+              style="
+                --br-blobby: 53% 67% 75% 78% / 64% 56% 98%;
+                --br-blobby-after: 54% 85% 89% 60% / 56% 94% 58%;
+                --br-blobby-before: 95% 54% 52% 94% / 77% 73% 89%;
+              "
+            ></div
+          ></app-blobby>
+        </div>
+      </div>
+
+      <div class="connection-info">
+        <h3>HALACHAT: <span class="connection-status">Online</span></h3>
+        <h5>
+          <i class="fa-solid fa-user"></i> Online now:
+          <span class="online-now">6532</span>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com/"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </h5>
+      </div>
+
+      <div class="personal-info">
+        <select class="form-select" name="region">
+          <option value="" disabled selected>Region</option>
+          <option value="jordan">Jordan</option>
+        </select>
+        <select class="form-select" name="gender">
+          <option value="" disabled selected>Gender</option>
+          <option value="male"><i class="fa-solid fa-person"></i> Male</option>
+          <option value="female">
+            <i class="fa-solid fa-person-dress"></i> Female
+          </option>
+        </select>
+      </div>
+
+      <div class="connection-control">
+        <div class="mic">
+          <i class="fa-solid fa-microphone-slash fa-2xl"></i>
+          <!-- <i class="fa-solid fa-microphone fa-2xl"></i> -->
+          <span>Unmute</span>
+        </div>
+
+        <div class="call">
+          <i class="fa-solid fa-phone fa-2xl"></i>
+          <span>Call</span>
+        </div>
+      </div>
+
+      <div class="caller">
+        <span
+          >Your partner is talking to you from <i class="fa-solid fa-flag"></i
+        ></span>
+      </div>
+
+      <div class="chat-box"><span>Chat Box</span></div>
+    </section>
+
+    <footer>
+      <h2>What is HALACHAT</h2>
+      <p>
+        It is a free service where you can randomly voice chat with people
+        online from all over the world.
+      </p>
+
+      <h4>Get the HalaChat app</h4>
+      <button type="button" class="btn btn-dark btn-lg download-button">
+        <i class="fa-brands fa-apple"></i> Download
+      </button>
+      <button
+        type="button"
+        class="btn btn-outline-light btn-lg download-button"
+      >
+        <i class="fa-brands fa-google-play"></i> Download
+      </button>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
